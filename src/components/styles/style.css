@@ -168,6 +168,7 @@ main.portfolio-items .box a{
     display: grid;
     justify-items: center;
     align-items: center;
+    text-align: center;
 }
 .box a div{
     width: 100%;
@@ -452,6 +453,53 @@ div.social-contact a{
 }
 .social-contact a:hover{
     color: var(--white-color);
+}
+
+.internal-page{
+    width: 80%;
+    min-height: 50rem;
+    margin: 2rem auto;
+    display: grid;
+    justify-items: center;
+    color: var(--manatee);
+}
+.internal-page h2{
+    font-size: 3.6rem;
+    margin: 1rem 0 2.3rem;
+
+}
+.internal-page h4{
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin-bottom: 4rem;
+}
+.internal-page img{
+    opacity: 0.8;
+    transition: all 0.2s ease-in-out;
+}
+.internal-page img:hover{
+    opacity: 1;
+}
+.details{
+    width: 100%;
+    padding: 2rem 0 0;
+    line-height: 1.5;
+    color: var(--light-color);
+}
+.details h3{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.details ul{
+    list-style-type: square;
+    width: 80%;
+}
+.details ul li{
+    margin:0.5rem 0 0.5rem 2rem;
+    background: var(--oxford-blue);
+}
+.details a{
+    display: inline-block
 }
 
 
