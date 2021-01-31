@@ -67,7 +67,7 @@ const IndexPage = () => {
                 <section className="box">
                     <Link to="/first-mod">
                         <div>
-                            <Img fluid={data.firstB.childImageSharp.fluid} />
+                            <Img fluid={data.firstB.childImageSharp.fluid} alt="Screenshot of my first brief" />
                         </div>
                         <h2>Personal Web Page</h2>
                         <h4>Make a personal page using HTML and CSS.</h4>
@@ -77,7 +77,7 @@ const IndexPage = () => {
                 <section className="box">
                     <Link to="/second-b">
                         <div>
-                            <Img fluid={data.secondB.childImageSharp.fluid} />
+                            <Img fluid={data.secondB.childImageSharp.fluid} alt="Screenshot of my second brief" />
                         </div>
                         <h2>An interactive page</h2>
                         <h4>Using JavaScript + HTML/CSS.</h4>
@@ -88,8 +88,7 @@ const IndexPage = () => {
                 <section className="box">
                     <Link to="/third-b">
                         <div>
-                            <Img fluid={data.thirdB.childImageSharp.fluid} />
-                            {/* <img src={ThirdB} alt="Screenshot of my third Brief" /> */}
+                            <Img fluid={data.thirdB.childImageSharp.fluid} alt="Screenshot of my third brief" />
                         </div>
                         <h2>A Habit Tracker</h2>
                         <h4>Building a habit tracker using vanilla JS</h4>
@@ -100,7 +99,7 @@ const IndexPage = () => {
                 <section className="box">
                     <Link to="/fourth-b">
                         <div>
-                            <Img fluid={data.fourthB.childImageSharp.fluid} />
+                            <Img fluid={data.fourthB.childImageSharp.fluid} alt="Screenshot of my fourth brief" />
                         </div>
                         <h2>A Real Personal Portfolio</h2>
                         <h4>With all the bells and whistles</h4>
@@ -111,7 +110,7 @@ const IndexPage = () => {
                 <section className="box">
                     <Link to="/fifth-b">
                         <div>
-                            <Img fluid={data.fifthB.childImageSharp.fluid} />
+                            <Img fluid={data.fifthB.childImageSharp.fluid} alt="Screenshot of my fifth brief" />
                         </div>
                         <h2>TweeterLator</h2>
                         <h4>A website that uses APIs + npm packages</h4>
@@ -122,7 +121,7 @@ const IndexPage = () => {
                 <section className="box">
                     <Link to="/sixth-b">
                         <div>
-                            <Img fluid={data.sixthB.childImageSharp.fluid} />
+                            <Img fluid={data.sixthB.childImageSharp.fluid} alt="Screenshot of my sixth brief" />
                         </div>
                         <h2>A real client</h2>
                         <h4>Building a Shopify store</h4>
