@@ -175,7 +175,7 @@ main.portfolio-items .box a{
     align-items: center;
     text-align: center;
 }
-.box a div{
+.box a > div{
     width: 100%;
     border: 1px solid var(--medium-color);
     padding:1.6rem;
