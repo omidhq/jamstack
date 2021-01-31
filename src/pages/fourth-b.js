@@ -1,12 +1,24 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
+import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import FourthB from '../../static/images/4th-b.png'
 
 
-const FourthBrief = () => (
+const FourthBrief = () => {
+    const data = useStaticQuery (graphql`
+        query fourthImage {
+            fourthB: file(relativePath: {eq: "4th-b.png"}) {
+                childImageSharp {
+                    fluid(maxWidth: 1200, quality: 100) {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
+        }
+    `)
+    return(
   <Layout>
     <SEO title="4. Portfolio" />
     <div className="backHome">
@@ -25,8 +37,8 @@ const FourthBrief = () => (
         <h2>A Real Personal Portfolio</h2>
         <h4>With all the bells and whistles</h4>
         <div>
-            <img src={FourthB} alt="Screenshot of my latest porftolio" />
-        </div>
+                    <Img fluid={data.fourthB.childImageSharp.fluid} alt="Screenshot of my fourth brief" />
+                </div>
         <div className="details">
             <h3>Specifications:</h3>
             <ul>
@@ -57,5 +69,6 @@ const FourthBrief = () => (
     </main>
   </Layout>
 )
+}
 
 export default FourthBrief
